@@ -167,8 +167,12 @@ void Application::PrintCustomerCommand()
 
 void Application::AddNewCustomerCommand()
 {
+	std::cout << "----------------------------------\n";
+	
 	auto id = m_mtRand();
 	customers.push_back({ id });
+	std::cout << "New customer with customerId:"<<id<<" was added to the system.\n";
+	std::cout << "----------------------------------\n";
 }
 
 void Application::BuyAutoCommand()
